@@ -14,6 +14,14 @@ gulp.task("pre",function(){
 });
 
 
+gulp.task("img",function(){
+   return gulp.src(
+       [
+           "img/*",
+      ]
+   ).pipe(gulp.dest("img/"))
+});
+
 gulp.task("as",function(){
     return gulp.src(
         [
@@ -23,8 +31,8 @@ gulp.task("as",function(){
     ).pipe(concat('as.js'))
     .pipe(uglify()).pipe(gulp.dest("build/"))
  });
- 
+
 
  gulp.task("default",function(){
-     gulp.start("pre","as");
+     gulp.start("pre","as","img");
  })

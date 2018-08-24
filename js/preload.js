@@ -9,7 +9,7 @@ var progressIb = document.getElementById('progressIb');
 var O_Laocar =  document.getElementById('Laocar');
 var O_Laotext =  document.getElementById('Laosiji');
 var O_Pgrass = document.getElementById('Pgrass');
-var arr = ['../img/fall.png','../img/jumpinthesea.png','../img/swim2.png','../img/walk.png',"img/far-forest.png",'../img/ground.png','../img/grass.png','../img/tree-1.png','../img/tree-2.png','../img/tree-3.png','../img/title.png','img/mountain.png','img/mountain2.png',"./img/Tinyplane.png","img/ballon.png","img/mountain3.png","img/wood%20board.png","./img/dataDEMO/windomill.png","./img/walktorocket.png"];
+var arr = ['./img/fall.png','./img/jumpinthesea.png','./img/swim2.png','./img/walk.png',"img/far-forest.png",'./img/ground.png','./img/grass.png','./img/tree-1.png','./img/tree-2.png','./img/tree-3.png','./img/title.png','img/mountain.png','img/mountain2.png',"./img/Tinyplane.png","img/ballon.png","img/mountain3.png","img/wood%20board.png","./img/dataDEMO/windomill.png","./img/walktorocket.png"];
 var n1 = new Image;
 var n2 = new Image;
 n1.src = './img/laosiji.png';
@@ -37,10 +37,10 @@ function hidePreloader(){   //预加载完成之后 隐藏预加载页面
 function hidefallAnimation(){
     fallAnimation.setAttribute('class','displaynone');
 }
-function hideKeynotice() {
+function hideKeynotice(){
     Keynotice.setAttribute('class','displaynone');
 }
-function showKeynotice() {
+function showKeynotice(){
     Keynotice.setAttribute('class','ALLdisplayshow');
 }
 
